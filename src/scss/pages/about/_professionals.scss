@@ -1,0 +1,89 @@
+.section {
+    // .section_professionals
+    &_professionals {
+        background: linear-gradient(101.1deg, rgba(239, 239, 239, 0.4) -5.03%, rgba(118, 66, 149, 0.185) 103.22%);
+        padding: 80px 0;
+        @media (max-width: $breakpoint992) {
+            padding: 40px 0;
+        }
+    }
+}
+.container {
+}
+.professionals {
+    // .professionals__header
+    &__header {
+        margin-bottom: 80px;
+        text-align: center;
+        @media (max-width: $breakpoint992) {
+            margin-bottom: 40px;
+        }
+    }
+    // .professionals__title
+    &__title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+        text-align: center;
+        color: $tertiary;
+        margin-bottom: 20px;
+        @media (max-width: $breakpoint992) {
+            font-size: 36px;
+            line-height: 44px;
+        }
+        @media (max-width: $breakpoint576) {
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+    // .professionals__subtitle
+    &__subtitle {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: $tertiary;
+    }
+    // .professionals__content
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    // .professionals__item
+    &__item {
+        max-width: 280px;
+        margin-right: 20px;
+        @media (max-width: $breakpoint1200) {
+            margin: 20px;
+        }
+        @media (max-width: $breakpoint768) {
+            text-align: center;
+        }
+    }
+    // .professionals__item-img
+    &__item-img {
+    }
+    // .professionals__item-content
+    &__item-content {
+    }
+    // .professionals__item-title
+    &__item-title {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        color: $tertiary;
+        margin: 10px 0;
+        @media (max-width: $breakpoint992) {
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+    // .professionals__item-text
+    &__item-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: $tertiary;
+    }
+}

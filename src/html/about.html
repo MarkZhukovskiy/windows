@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecoProject</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Metrophobic&family=Montserrat:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<head>
+    @@include('chunks/_header.html')
+</head>
+    <!-- btn-scroll -->
+    @@include('chunks/_btnUP.html')
+    <!-- btn-scroll -->
+
+<body>
+    @@include('pages/main/_select.html')
+    @@include('pages/about/_about_benefits.html')
+    @@include('pages/about/_professionals.html')
+    @@include('pages/main/_format.html')
+    @@include('pages/main/_questions.html')
+</body>
+
+<footer>
+    @@include('chunks/_maps.html')
+    @@include('chunks/_footer.html')
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="index.min.js"></script>
+</footer>
+
+</html>

@@ -1,0 +1,118 @@
+body {
+    height: 100%;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.btn_primary {
+    width: 200px;
+    height: 55px;
+    background: $primary;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+        background-color: #985dbb;
+        transition: background-color 0.3s ease-in-out;
+    }
+}
+
+.btn_outline {
+    width: 200px;
+    height: 55px;
+    background: #fff;
+    border: 1px solid $primary;
+    border-radius: 10px;
+    color: $primary;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+        background-color: #985dbb;
+        color: #fff;
+        transition: background-color 0.3s ease-in-out;
+    }
+}
+
+.btnUP {
+    position: fixed;
+    background: #ffffff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: calc(5% - 25px);
+    bottom: calc(20% - 25px);
+    z-index: 11;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    @media (max-width: $mobile) {
+        right: calc(5% + 15px);
+        bottom: calc(5% + 15px);
+    }
+}
+
+// .btn__prev
+.btn__prev {
+    background: $primary;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+// .btn__next
+.btn__next {
+    background: $primary;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transform: rotate(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#btnUP {
+    display: none;
+}
+
+#btnUP.active {
+    display: flex;
+}
+
+// slider
+.swiper-wrapper {
+    margin-bottom: 50px;
+    @media (max-width: $breakpoint992) {
+        margin-bottom: 30px;
+    }
+    @media (max-width: $mobile) {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,90 @@
+.section {
+    // .section_reviews
+    &_reviews_page {
+        background: linear-gradient(101.1deg, rgba(239, 239, 239, 0.4) -5.03%, rgba(118, 66, 149, 0.185) 103.22%);
+        padding: 70px 0;
+        position: relative;
+        @media (max-width: $breakpoint992) {
+            padding: 50px 0;
+        }
+        @media (max-width: $mobile) {
+            padding: 30px 0;
+        }
+    }
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    @media (max-width: $mobile) {
+        align-items: center;
+    }
+    // .page__title
+    &__title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+        color: $tertiary;
+        margin-bottom: 70px;
+        @media (max-width: $breakpoint992) {
+            font-size: 36px;
+            line-height: 44px;
+            margin-bottom: 50px;
+        }
+        @media (max-width: $mobile) {
+            font-size: 30px;
+            line-height: 38px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    }
+    // .page__input
+    &__input {
+        width: 420px;
+        height: 50px;
+        background: white;
+        border-radius: 14px;
+        border: none;
+        padding: 0 20px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        :focus {
+            border: none;
+        }
+        @media (max-width: $breakpoint992) {
+            width: 350px;
+        }
+        @media (max-width: $mobile) {
+            width: 80%;
+        }
+    }
+    // .page__input-name
+    &__input-name {
+    }
+    // .page__input-phone
+    &__input-phone {
+    }
+    // .page__textarea
+    &__textarea {
+        width: 415px;
+        border: 2px solid white;
+        padding: 20px;
+        box-shadow: 8px 7px 30px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        resize: none;
+        font-size: 16px;
+        @media (max-width: $breakpoint992) {
+            width: 370px;
+        }
+        @media (max-width: $mobile) {
+            width: 80%;
+            height: 75px;
+        }
+    }
+    // .page__btn
+    &__btn {
+        margin-top: 20px;
+    }
+}
